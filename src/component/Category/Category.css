@@ -1,0 +1,32 @@
+.blog-category {
+    padding: 80px 0;
+}
+
+.sin-category {
+    transition: transform 250ms ease, box-shadow 250ms ease, color 250ms ease;
+    box-shadow: 1px 1px 5px 0 rgb(1 1 1 / 5%);
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.sin-category:hover {
+    -webkit-transform: translateY(-0.25rem);
+    -ms-transform: translateY(-0.25rem);
+    transform: translateY(-0.25rem);
+    box-shadow: 0px 2px 4px rgb(46 41 51 / 8%), 0px 5px 10px rgb(71 63 79 / 16%);
+}
+
+.sin-category p span {
+    font-size: 32px;
+    font-weight: 700;
+    color: #4f46e5;
+}
+
+.sin-category h3 {
+    color: #718096;
+    font-size: 1rem;
+    line-height: 1.33;
+    font-weight: bold;
+    padding-top: 10px;
+}

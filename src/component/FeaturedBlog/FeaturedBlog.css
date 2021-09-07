@@ -1,0 +1,12 @@
+.section-heading {
+    font-weight: 900;
+}
+
+h2.section-heading:after {
+    content: '';
+    width: 15%;
+    border-bottom: 4px solid #4f46e5;
+    display: block;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}

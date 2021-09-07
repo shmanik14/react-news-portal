@@ -1,0 +1,16 @@
+.form-card {
+    border: 1px solid #ebdfdf;
+    width: 500px;
+    margin: 100px auto;
+    padding: 50px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .form-card {
+        width: 100% !important;
+        padding: 20px 30px;
+        margin: 50px auto;
+    }
+}

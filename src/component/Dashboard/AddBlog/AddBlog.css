@@ -1,0 +1,12 @@
+.sidebar {
+    background-color: #edf2f7;
+    padding: 50px 20px;
+    border-radius: 10px;
+}
+
+.sidebar ul a {
+    display: block;
+    font-size: 18px;
+    padding-bottom: 10px;
+    font-weight: 600;
+}
