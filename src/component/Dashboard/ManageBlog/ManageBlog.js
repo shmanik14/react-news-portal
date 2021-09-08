@@ -8,7 +8,7 @@ const ManageBlog = () => {
     const [loggedInUser, setLoggedInUser] = useContext(userContext);
     const [manageServices, setManageServices] = useState([]);
     useEffect(() => {
-        fetch('https://desolate-meadow-15734.herokuapp.com/blogs', {
+        fetch('https://frozen-thicket-28551.herokuapp.com/blogs', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -19,7 +19,7 @@ const ManageBlog = () => {
     } , [])
 
     const deleteBlog = (id) => {
-        fetch(`https://desolate-meadow-15734.herokuapp.com/delete/${id}`, {
+        fetch(`https://frozen-thicket-28551.herokuapp.com/delete/${id}`, {
             method: 'DELETE'
         })
         .then(res => res.json())

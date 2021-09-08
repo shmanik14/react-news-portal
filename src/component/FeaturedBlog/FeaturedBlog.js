@@ -5,7 +5,7 @@ import './FeaturedBlog.css';
 const FeaturedBlog = () => {
     const [blogs, setBlogs] = useState([]);
     useEffect(() => {
-        fetch(`https://desolate-meadow-15734.herokuapp.com/blogs`)
+        fetch(`https://frozen-thicket-28551.herokuapp.com/blogs`)
         .then(res => res.json())
         .then(data => setBlogs(data))
     }, [])

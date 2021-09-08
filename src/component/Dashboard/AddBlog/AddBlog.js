@@ -27,11 +27,13 @@ const AddBlog = () => {
     const onSubmit = data => {
         const blogData = {
             title: data.title,
+            category: data.category,
+            author: data.author,
             description: data.description,
             date: new Date().toDateString('dd/MM/yyyy HH:MM:SS'),
             image: imageURL
         }
-        const url = `https://desolate-meadow-15734.herokuapp.com/addBlog`;
+        const url = `https://frozen-thicket-28551.herokuapp.com/addBlog`;
         fetch(url, {
             method: 'POST',
             headers: {
@@ -59,7 +61,13 @@ const AddBlog = () => {
                     <form onSubmit={handleSubmit(onSubmit)}>
                         <label className="pb-3 block text-sm font-medium text-gray-700" htmlFor="title">Blog Title</label>
                             <input className="block w-full text-base p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500" name="title" placeholder="Blog Title" {...register("title")} />
-                            <br/>              
+                            <br/> 
+                        <label className="pb-3 block text-sm font-medium text-gray-700" htmlFor="category">Blog Category</label>
+                            <input className="block w-full text-base p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500" name="category" placeholder="Blog Category" {...register("category")} />
+                            <br/>     
+                        <label className="pb-3 block text-sm font-medium text-gray-700" htmlFor="author">Blog Author Name</label>
+                            <input className="block w-full text-base p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500" name="author" placeholder="Blog Author" {...register("author")} />
+                            <br/>            
                         <label className="pb-3 block text-sm font-medium text-gray-700" htmlFor="description">Blog Description</label>
                             <textarea className="block w-full text-base p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500" name="description" placeholder="Description" {...register("description")} />
                             <br/>

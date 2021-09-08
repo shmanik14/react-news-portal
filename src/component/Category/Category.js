@@ -10,7 +10,7 @@ const Category = () => {
             <div className="container mx-auto grid md:grid-cols-4 gap-4">
                 <div className="sin-category text-center">
                     <p><span><FontAwesomeIcon icon={faFileAlt} /></span></p>
-                    <h3>Case Studies</h3>
+                    <h3>International</h3>
                 </div>
                 <div className="sin-category text-center">
                     <p><span><FontAwesomeIcon icon={faAd} /></span></p>
@@ -22,7 +22,7 @@ const Category = () => {
                 </div>
                 <div className="sin-category text-center">
                     <p><span><FontAwesomeIcon icon={faTasks} /></span></p>
-                    <h3>Management</h3>
+                    <h3>Sports</h3>
                 </div>
             </div>
         </div>

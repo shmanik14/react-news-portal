@@ -10,7 +10,7 @@ import './Sliders.css';
 const Sliders = () => {
     const [blogs, setBlogs] = useState([]);
     useEffect(() => {
-        fetch(`https://desolate-meadow-15734.herokuapp.com/blogs`)
+        fetch(`https://frozen-thicket-28551.herokuapp.com/blogs`)
         .then(res => res.json())
         .then(data => setBlogs(data))
     }, [])
@@ -39,7 +39,7 @@ const Sliders = () => {
                         </div>
                         <div className="slider-blog-content">
                             <h2>{blog.title}</h2>
-                            <p className="author"><span><FontAwesomeIcon icon={faUser} /></span> Jane Smith</p>
+                            <p className="author"><span><FontAwesomeIcon icon={faUser} /></span> {blog.author}</p>
                             <ul className="slider-date">
                                 <li><span><FontAwesomeIcon icon={faCalendarAlt} /></span> {blog.date}</li>
                                 <li><span><FontAwesomeIcon icon={faClock} /></span> 2 min</li>

@@ -1,3 +1,5 @@
+import { faUser } from '@fortawesome/free-regular-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 
@@ -11,12 +13,10 @@ const Blog = ({blog}) => {
             <div className="flex flex-col h-full max-w-lg mx-auto bg-gray-800 rounded-lg">
                 <img className="rounded-lg rounded-b-none" src={blog.image} alt="thumbnail" loading="lazy"/>
                 <div className="flex justify-between -mt-4 px-4">
-                    <span className="inline-block ring-4 bg-red-500 ring-gray-800 rounded-full text-sm font-medium tracking-wide text-gray-100 px-3 pt-0.5" >Advertising</span >
+                    <span className="inline-block ring-4 bg-red-500 ring-gray-800 rounded-full text-sm font-medium tracking-wide text-gray-100 px-3 pt-0.5" >{blog.category}</span >
                     <span className="flex h-min space-x-1 items-center rounded-full text-gray-400 bg-gray-800 py-1 px-2 text-xs font-medium" >
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" >
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    <p className="text-blue-500 font-semibold text-xs"> 6 Mins </p>
+                    <span><FontAwesomeIcon icon={faUser} /></span>
+                    <p className="text-blue-500 font-semibold text-xs"> {blog.author} </p>
                     </span>
                 </div>
                 <div className="py-2 px-4">

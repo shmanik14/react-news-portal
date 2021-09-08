@@ -1,147 +1,157 @@
 .slider {
-    padding-top: 30px;
+  padding-top: 30px;
 }
 
 .sin-slider-blog {
-    position: relative;
+  position: relative;
 }
 
 .slider-blog-img {
-    background: black;
-    overflow: hidden;
-    border-radius: 15px;
+  background: black;
+  overflow: hidden;
+  border-radius: 15px;
 }
 
 .slider-blog-img img {
-    object-fit: cover;
-    opacity: 0.4;
-    width: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+  width: 100%;
 }
 
 .slider-blog-content {
-    position: absolute;
-    top: 13%;
-    left: 13%;
-    right: 10%;
+  position: absolute;
+  top: 13%;
+  left: 13%;
+  right: 10%;
 }
 
 .slider-blog-content h2 {
-    font-size: 2.25rem;
-    color: #fff;
+  font-size: 2.25rem;
+  color: #fff;
 }
 
 p.author {
-    color: #fff;
-    padding: 15px 0 10px 0;
+  color: #fff;
+  padding: 15px 0 10px 0;
 }
 
 .slider-date li {
-    padding-right: 15px;
+  padding-right: 15px;
 }
 
 .slider-date li span,
 p.author span {
-    padding-right: 10px;
+  padding-right: 10px;
 }
 
 .slick-prev,
 .slick-next {
-    top: 75%;
-    z-index: 99;
+  top: 75%;
+  z-index: 99;
 }
 
 .slick-dots {
-    bottom: 70%;
-    display: inline-grid !important;
-    left: 5%;
+  bottom: 70%;
+  display: inline-grid !important;
+  left: 5%;
 }
 
 .slick-dots li button:before {
-    font-size: 15px;
+  font-size: 15px;
 }
 
 .slick-dots li.slick-active button:before {
-    opacity: .9;
-    color: #4f46e5;
+  opacity: 0.9;
+  color: #4f46e5;
 }
 
 .slick-dots li button:before {
-    color: #fff;
+  color: #fff;
 }
 
 .slick-prev:before,
 .slick-next:before {
-    font-size: 50px;
-    color: #fff;
+  font-size: 50px;
+  color: #fff;
 }
 
 .slick-prev {
-    left: 10%;
+  left: 10%;
 }
 
 .slick-next {
-    right: 80%;
+  right: 80%;
 }
 
 ul.slider-date li {
-    display: inline;
-    color: #fff;
+  display: inline;
+  color: #fff;
 }
 
 .trending-post {
-    padding: 20px;
-    border-radius: 10px;
-    background-color: #edf2f7;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #edf2f7;
 }
 
 h3.trending-title {
-    font-size: 22px;
-    font-weight: 600;
+  font-size: 22px;
+  font-weight: 600;
 }
 
 h3.trending-title:after {
-    content: '';
-    width: 25%;
-    border-bottom: 4px solid #4f46e5;
-    display: block;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
+  content: "";
+  width: 25%;
+  border-bottom: 4px solid #4f46e5;
+  display: block;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .trending-post ul li {
-    font-size: 16px;
-    padding-bottom: 10px;
-    list-style: square;
-    list-style-position: inside;
-    background: linear-gradient(to right, currentcolor 0%, currentcolor 100%) 0px 95% / 0px 1px no-repeat;
-    transition: background-size 0.35s cubic-bezier(0.48, 0.56, 0.67, 0.76) 0s;
+  font-size: 16px;
+  padding-bottom: 10px;
+  list-style: square;
+  list-style-position: inside;
+  background: linear-gradient(to right, currentcolor 0%, currentcolor 100%) 0px
+    95% / 0px 1px no-repeat;
+  transition: background-size 0.35s cubic-bezier(0.48, 0.56, 0.67, 0.76) 0s;
 }
 
 .trending-post ul li:hover {
-    background-size: 100% 1px;
+  background-size: 100% 1px;
 }
 
 .trending-post ul li::marker {
-    color: #4f46e5;
+  color: #4f46e5;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-    .slider-blog-content h2 {
-        font-size: 1.25rem;
-        color: #fff;
-    }
+  .slider-blog-content h2 {
+    font-size: 1.25rem;
+    color: #fff;
+  }
 
-    .slick-next {
-        right: 75%;
-    }
+  .slick-next {
+    right: 75%;
+  }
 
-    .slick-prev:before,
-    .slick-next:before {
-        font-size: 35px;
-    }
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 35px;
+  }
 
-    p.author {
-        color: #fff;
-        padding: 7px 0 0 0;
-    }
+  p.author {
+    color: #fff;
+    padding: 7px 0 0 0;
+  }
+}
+.sin-blog-content {
+  padding-bottom: 20px;
+}
+.sin-blog-content .slider-date li {
+  color: #000;
+}
+.detail-des {
+  font-size: 18px;
 }
