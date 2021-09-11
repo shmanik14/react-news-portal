@@ -55,6 +55,7 @@ const AddBlog = () => {
                     <ul>
                         <Link to="/addBlog">Add Blog</Link>
                         <Link to="/manageBlog">Manage Blog</Link>
+                        <Link to="/addAdmin">Add Admin</Link>
                     </ul>
                 </div>
                 <div className="px-5 md:col-span-3">

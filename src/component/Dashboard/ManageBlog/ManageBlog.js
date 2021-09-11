@@ -37,6 +37,7 @@ const ManageBlog = () => {
                 <div className="sidebar">
                     <ul>
                         <Link to="/addBlog">Add Blog</Link>
+                        <Link to="/addAdmin">Add Admin</Link>
                         <Link to="/manageBlog">Manage Blog</Link>
                     </ul>
                 </div>
